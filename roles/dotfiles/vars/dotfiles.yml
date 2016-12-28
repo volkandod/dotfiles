@@ -1,0 +1,7 @@
+vim:
+    conf:
+        source: "vimrc.j2"
+        destination: "/etc/vim/vimrc"
+        owner: "root"
+        group: "root"
+        mode: "0644"

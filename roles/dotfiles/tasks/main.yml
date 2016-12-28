@@ -1,0 +1,11 @@
+---
+- name: vimrc is configuring
+  template:
+        src: "{{ vim['conf']['source'] }}"
+        dest: "{{ vim['conf']['destination'] }}"
+        owner: "{{ vim['conf']['owner'] }}"
+        group: "{{ vim['conf']['group'] }}"
+        mode: "{{ vim['conf']['mode'] }}"
+  sudo: yes
+  tags: vim 
+

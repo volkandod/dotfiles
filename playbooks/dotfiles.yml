@@ -1,0 +1,9 @@
+---
+
+- hosts: dotfiles
+  remote_user: volkan
+  sudo: yes
+  vars_files:
+  - /etc/ansible/roles/dotfiles/vars/dotfiles.yml
+  roles:
+   - { role: dotfiles }
